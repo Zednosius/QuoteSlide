@@ -1,0 +1,28 @@
+div {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#quote {
+	font-size:80px;
+}
+
+small {
+	font-size:70px;
+}
+
+#quote_div {
+	margin-top: 2%;
+	width: 1800px;
+	background-color: #f9f9f9;
+	border: 15px solid #ddd;
+}
+
+#ad {
+	font-size:85px;
+}
+
+#info {
+	font-size:80px;
+}
+
