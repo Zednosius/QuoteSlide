@@ -1,8 +1,8 @@
-var quote = document.getElementById("quote_text");
-var context = document.getElementById("context");
-loadXMLDoc();
-setInterval(loadXMLDoc, 3000000);
 
+loadXMLDoc();
+setInterval(loadXMLDoc, 3000000); // laddar om XML:en var 5:e minut
+
+// Laddar in XML:en
 function loadXMLDoc() {
 	var xmlhttp = new XMLHttpRequest();
 	xmlhttp.onreadystatechange = function() {
