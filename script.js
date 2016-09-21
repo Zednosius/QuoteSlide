@@ -1,6 +1,7 @@
 var quote = document.getElementById("quote_text");
 var context = document.getElementById("context");
-xml = loadXMLDoc()
+loadXMLDoc();
+setInterval(loadXMLDoc, 3000000);
 
 function loadXMLDoc() {
 	var xmlhttp = new XMLHttpRequest();
