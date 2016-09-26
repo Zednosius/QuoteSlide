@@ -29,7 +29,7 @@ function runQuoteSlide(xml){
 		}
 		changeQuote(quotes, quoteSequence);
 
-	}, 4000);
+	}, 7000);
 }
 
 function changeQuote(quotes, quoteSequence) {
