@@ -1,8 +1,9 @@
 var quouteChangeIntervalID = 0;
 
 loadXMLDoc();
-setInterval(loadXMLDoc, 3000000);
+setInterval(loadXMLDoc, 3000000); // laddar om XML:en var 5:e minut
 
+// Laddar in XML:en
 function loadXMLDoc() {
 	var xmlhttp = new XMLHttpRequest();
 	xmlhttp.onreadystatechange = function() {
@@ -33,7 +34,7 @@ function runQuoteSlide(xml){
 		}
 		changeQuote(quotes, quoteSequence);
 
-	}, 4000);
+	}, 7000);
 }
 
 function changeQuote(quotes, quoteSequence) {
