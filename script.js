@@ -1,5 +1,3 @@
-var quote = document.getElementById("quote_text");
-var context = document.getElementById("context");
 var quouteChangeIntervalID = 0;
 
 loadXMLDoc();
