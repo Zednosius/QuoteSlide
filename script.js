@@ -1,5 +1,7 @@
 var quote = document.getElementById("quote_text");
 var context = document.getElementById("context");
+var quouteChangeIntervalID = 0;
+
 loadXMLDoc();
 setInterval(loadXMLDoc, 3000000);
 
@@ -20,7 +22,11 @@ function runQuoteSlide(xml){
 	index = Math.floor(Math.random() * quotes.length);
 	quoteSequence = [];
 
-	setInterval(function () {
+	if (quouteChangeIntervalID){
+		clearInterval(quouteChangeIntervalID);
+	}
+
+	quouteChangeIntervalID = setInterval(function () {
 		if (quoteSequence.length == 0){
 			quoteSequence = new Array(quotes.length);
 			for (var i = 0; i < quoteSequence.length; i++) {
